@@ -11,7 +11,7 @@
 	<title>Soy Álvaro – Presentación personal y Hoja de vida</title>
 
   <!-- Web Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 	<!-- Bootstrap core CSS -->
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<!-- Font Awesome CSS -->
@@ -34,15 +34,19 @@
 </head>
 
 <body>
+	<!-- Preloader -->
+	<div id="tt-preloader">
+		<div id="pre-status">
+			<div class="preload-placeholder"></div>
+		</div>
+	</div>
 
 	<!-- Home Section -->
 	<section id="home" class="tt-fullHeight" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
 		<div class="intro">
-			<div class="intro-sub">Soy Álvaro Chacón</div>
-			<h1>Ingeniero<span> Electronico</span></h1>
-			<p>Busco una oportunidad para trabajar, afianzar mis conocimientos y crecer . Me gustaría participar en una organización que busque obtener una ventaja competitiva y retribuir a la comunidad.<br>
-             Como individuo soy creativo, divertido y naturalmente apasionado. <br>
-             Me involucro con el desarrollo y las nuevas tecnologías, soy comprometido, responsable y tengo como objetivo cumplir las labores inherentes a mi cargo.</p>
+			<div class="intro-sub">Hola, soy Álvaro Chacón</div>
+			<h1>Estudiante de <span>Ingenieria Electronica</span></h1>
+			<p>Soy un diseñador y desarrollador creativo, totalmente independiente y profesional. Me involucro con el diseño y las nuevas tecnologias<br> comprometido y responsable en las funciones relacionadas con el entorno laboral<br> teniendo como objetivo cumplir las labores inherentes a mi cargo.</p>
 
       <div class="social-icons">
         <ul class="list-inline">
@@ -77,6 +81,7 @@
 						<li><a href="#about">Sobre mi</a></li>
 						<li><a href="#resume">Hoja de vida</a></li>
 						<li><a href="#skills">Habilidades</a></li>
+            			<li><a href="#contact">Contacto</a></li>
 					</ul>
 				</div>
 			</div><!-- .container -->
@@ -94,34 +99,46 @@
           <div class="col-md-4 col-md-push-8">
             <div class="biography">
               <div class="myphoto">
-                <img src="assets/images/Perfil.png" alt="">
+                <img src="assets/images/myphoto.jpg" alt="">
               </div>
               <ul>
                 <li><strong>Nombre:</strong> Álvaro José Chacón Tutalchá</li>
+                <li><strong>Fecha de nacimiento:</strong> 24 Nov 1994</li>
+                <li><strong>Dirección:</strong> Cll 63C Cr 55-73 Barrio La Aldea, Apto 101</li>
+                <li><strong>Nacionalidad:</strong> Colombiano</li>
                 <li><strong>Telefono:</strong> (+57) 317 746 8060</li>
-                <li><strong>Email:</strong> alvaro_chacon08@hotmail.com</li>
+                <li><strong>Email:</strong> alvaro.chacon@udea.edu.co</li>
                 <li><strong>Pasatiempos:</strong> Ciclismo, Natacion y Videojuegos</li>
-                <li><strong>Linkedin:</strong><a href="https://www.linkedin.com/in/alvaro-chacon-841720126/"> Alvaro Chacon </a></li>
               </ul>
             </div>
           </div> <!-- col-md-4 -->
 
           <div class="col-md-8 col-md-pull-4">
+            <div class="short-info wow fadeInUp">
+              <h3>Objetivo</h3>
+              <p>Busco una oportunidad para trabajar y actualizarme, así como participar en una organización que cree en obtener una ventaja competitiva y retribuir a la comunidad. Actualmente estoy ampliando mis conocimientos en IoT (Internet de las cosas). Me concentro en usar mis habilidades interpersonales para crear una buena experiencia de usuario y crear un gran interés en mis empleadores. Como individuo, estoy seguro de que me encontrarás creativo, divertido y naturalmente apasionado. Soy un pensador avanzado, a otros les puede parecer llamativo cuando sea necesario trabajar en equipo. Me gusta enseñar y tengo las cualidades para hacerlo bien.</p>
+            </div>
 
             <div class="short-info wow fadeInUp">
               <h3>Que hago ?</h3>
-              <p>Desarrollo software y  hardware, construyo dispositivos con MCUs que pueden ayudar con diferentes tareas, entre ellos un dispositivo inalambrico que genera una alarma en el caso de presentarse una inmersion accidental en una piscina
-              y se pueda antender de manera oportuna, la realice bajo lenguaje C ++ y analisis de datos obtenidos por los sensores en Python. Tambien desarrolle un dispositivo de domotica con interfaz web para el cuarto de maquinas de una piscina y jacuzzi. 
-              Me encanta el estilo limpio y elegante, tengo experiencia en el desarrollo de sitios web modernos ademas de conocimiento y manejo de diferentes lenguajes de programación. </p>
+              <p>Desarrollo hardware y lo complemento con desarrollo de software, un ejemplo es la interfaz de inmótica de un cuarto de maquinas de una piscina y jacuzzi que realice hace pocos meses(*). Me encanta el estilo limpio y elegante, y tengo experiencia en la producción de HTML y CSS para sitios web modernos. También tengo conocimiento y manejo diferentes lenguajes de programación tales como C, C++, JavaScript, PHP, Python, Assembler y VHDL.</p>
 
               <ul class="list-check">
-                <li>Desarrollo de software</li>
-                <li>Diseño de interfaz</li>
                 <li>Diseño de experiencia de usuario</li>
+                <li>Diseño de interfaz</li>
+                <li>Edicion de imagenes</li>
+                <li>Edicion de video</li>
                 <li>Desarrollo de hardware</li>
-                <li>Elaboracion de circuitos electronicos</li>
-                
               </ul>
+            </div>
+
+            <div class="inmotica">
+                <img src="assets/images/inmotica.png" alt="">
+            </div>
+
+            <div class="download-button">
+              <a class="btn btn-info btn-lg" href="#contact"><i class="fa fa-paper-plane"></i>Enviar un mensaje</a>
+              
             </div>
           </div>
 
@@ -142,65 +159,25 @@
                     </div>
                     <div class="resume">
                         <ul class="timeline">
-
                             <li>
                                 <div class="posted-date">
-                                  <span class="month">2012-2021</span>
+                                    <span class="month">2005-2011</span>
                                 </div><!-- /posted-date -->
 
                                 <div class="timeline-panel wow fadeInUp">
                                     <div class="timeline-content">
                                         <div class="timeline-heading">
-                                            <h3>Educación Superior</h3>
-                                            <span>Ingeniería Electrónica, Universidad de Antioquia</span>
+                                            <h3>Educación Secundaria</h3>
+                                            <span>Escuela Normal Superior de  Pasto</span>
                                         </div><!-- /timeline-heading -->
 
                                         <div class="timeline-body">
-                                            <p>Profesional con conocimientos científicos y tecnológicos, capaz de investigar, analizar, diseñar, apropiar tecnologías, implementar, mantener y dar soporte a procesos en los cuales intervienen dispositivos
-                                            y sistemas electrónicos. </p>
+                                            <p>Ademas de aprender los conocimientos basicos de secundaria tambien, me forme como educador, teniendo en cuenta ámbitos académicos y de convivencia, acordes a las dinámicas sociales actuales.</p>
                                         </div><!-- /timeline-body -->
                                     </div> <!-- /timeline-content -->
                                 </div><!-- /timeline-panel -->
                             </li>
 
-                            <li class="timeline-inverted">
-                                <div class="posted-date">
-                                    <span class="month">2019</span>
-                                </div><!-- /posted-date -->
-
-                                <div class="timeline-panel wow fadeInUp">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Formación complementaria</h3>
-                                            <span>Diseño Web con Adobe Dreamweawer, SENA</span>
-                                        </div><!-- /timeline-heading -->
-
-                                        <div class="timeline-body">
-                                            <p>Construccion, diseño y edicion de sitios y aplicaciones web  </p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div> <!-- /timeline-panel -->
-                            </li> 
-
-                            <li>
-                                <div class="posted-date">
-                                  <span class="month">2019</span>
-                                </div><!-- /posted-date -->
-
-                                <div class="timeline-panel wow fadeInUp">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Formación complementaria</h3>
-                                            <span>IoT - El internet de las cosas, Cisco Networking Academy</span>
-                                        </div><!-- /timeline-heading -->
-
-                                        <div class="timeline-body">
-                                            <p>La transformación digital actual está creando oportunidades económicas sin precedentes, la mayoría de dispositivos electrónicos están conectados a la red y es una gran oportunidad ser parte de este desarrollo.</p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div><!-- /timeline-panel -->
-                            </li>
-                            
                             <li class="timeline-inverted">
                                 <div class="posted-date">
                                     <span class="month">2009</span>
@@ -219,8 +196,27 @@
                                     </div> <!-- /timeline-content -->
                                 </div> <!-- /timeline-panel -->
                             </li>
-							
+
                             <li>
+                                <div class="posted-date">
+                                  <span class="month">2012-Actualidad</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Educación Superior</h3>
+                                            <span>Ingeniería Electrónica 10mo semestre, Universidad de Antioquia</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>He adquirido profundos conocimientos acerca del mundo de la electrónica; todas y cada una de las áreas que se puede abarcar y aplicar tambien he desarrollado prototipos de hardware y software. </p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+							
+                            <li class="timeline-inverted">
                                 <div class="posted-date">
                                     <span class="month">2019</span>
                                 </div><!-- /posted-date -->
@@ -239,7 +235,27 @@
                                 </div> <!-- /timeline-panel -->
                             </li>
                             
+                             <li>
+                                <div class="posted-date">
+                                  <span class="month">Actualmente</span>
+                                </div><!-- /posted-date -->
 
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Formación complementaria</h3>
+                                            <span>IoT - El internet de las cosas, Cisco Networking Academy</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>La transformación digital actual está creando oportunidades económicas sin precedentes, la mayoría de dispositivos electrónicos están conectados a la red y es una gran oportunidad ser parte de este desarrollo.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+                            
+                            
+                            
                             
                         </ul>
                     </div>
@@ -253,29 +269,85 @@
                     </div>
                     <div class="resume">
                         <ul class="timeline">
-                                                        
-                            <li>
+                            <li class="timeline-inverted">
                                 <div class="posted-date">
-                                  <span class="month">2021 Septiembre - Actualmente</span>
+                                  <span class="month">2010 - Actualmente (Prestación de servicios)</span>
                                 </div><!-- /posted-date -->
 
                                 <div class="timeline-panel wow fadeInUp">
                                     <div class="timeline-content">
                                         <div class="timeline-heading">
-                                            <h3>Encargado del area de Electronica</h3>
-                                            <span>Grupo Carpini, Envigado, Antioquia</span>
+                                            <h3>Servicio tecnico</h3>
+                                            <span>TEGSO, Pasto, Nariño</span>
                                         </div><!-- /timeline-heading -->
 
                                         <div class="timeline-body">
-                                            <p>Coordinacion de actvidades de mantenimiento, reparacion e instalacion de dispositivos de seguridad para piscinas. Diseño y desarrollo de nuevos dispositivos.</p>
+                                            <p>Se realiza actividades de mantenimiento preventivos y correctivos de los equipos de cómputo de manera remota o física previniendo así, paradas de operaciones financieras y logísticas.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div> <!-- /timeline-panel -->
+                            </li>
+                            
+                            <li>
+                                <div class="posted-date">
+                                  <span class="month">2014 - Actualmente (Prestación de servicios)</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Servicio tecnico</h3>
+                                            <span>Seincode SAS, Medellin, Antioquia</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>Creación y modificación de circulares informativas y campañas (Illustrator y web). Apoyo a usuarios cuando se presentan problemas de software y / o hardware.</p>
                                         </div><!-- /timeline-body -->
                                     </div> <!-- /timeline-content -->
                                 </div><!-- /timeline-panel -->
                             </li>
-
+                            
                             <li class="timeline-inverted">
                                 <div class="posted-date">
-                                  <span class="month">2021 Marzo - Agosto</span>
+                                  <span class="month">2019 Junio - Julio</span>
+                                </div>
+                                <!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Auxiliar de sistemas (Remplazo)</h3>
+                                            <span>COOSALUD, Medellin, Antioquia</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>Encargado del correcto funcionamiento de hardware y software de los 34 municipios donde la empresa presta su servicio.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div> <!-- /timeline-panel -->
+                            </li>
+
+                            <li>
+                                <div class="posted-date">
+                                  <span class="month">2020 Diciembre - Febrero</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Auxiliar de soporte</h3>
+                                            <span>Solutio SAS, Medellin, Antioquia</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>Servicio de apoyo informatico y soporte en software contable ICG.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="posted-date">
+                                  <span class="month">2021 Marzo - Actualmente</span>
                                 </div>
                                 <!-- /posted-date -->
 
@@ -287,52 +359,11 @@
                                         </div><!-- /timeline-heading -->
 
                                         <div class="timeline-body">
-                                            <p>Diseño y desarrollo de una nueva alarma de inmersión mediante lenguaje C++ y Python, mantenimiento reparación e instalación de dispositivos de seguridad para piscinas. 
-                                            Incursión en la implementación de sistemas IoT y domótica con interfaz web.</p>
+                                            <p>Diseño y desarrollo de una nueva alarma de inmersion, mantenimiento reparación e instalación de dispositivos de seguridad para piscinas. Incursion en la implementacion de sistemas IoT con interfaz web.</p>
                                         </div><!-- /timeline-body -->
                                     </div> <!-- /timeline-content -->
                                 </div> <!-- /timeline-panel -->
                             </li>
-
-                            <li>
-                                <div class="posted-date">
-                                  <span class="month">2020 Diciembre - Febrero </span>
-                                </div><!-- /posted-date -->
-
-                                <div class="timeline-panel wow fadeInUp">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Auxiliar de soporte</h3>
-                                            <span>Solutio SAS, Medellin, Antioquia</span>
-                                        </div><!-- /timeline-heading -->
-
-                                        <div class="timeline-body">
-                                            <p>Servicio de apoyo informático y soporte en software contable ICG mediante SQL y reparación de hardware y software de terceros.</p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div><!-- /timeline-panel -->
-                            </li>
-
-                            <li class="timeline-inverted">
-                                <div class="posted-date">
-                                  <span class="month">2019 Junio - Julio</span>
-                                </div>
-                                <!-- /posted-date -->
-
-                                <div class="timeline-panel wow fadeInUp">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Auxiliar de sistemas (Reemplazo)</h3>
-                                            <span>COOSALUD, Medellin, Antioquia</span>
-                                        </div><!-- /timeline-heading -->
-
-                                        <div class="timeline-body">
-                                            <p>Remplazo del ingeniero de Sistemas en sus vacaciones. Encargado del correcto funcionamiento de hardware y software de los dispositivos de 34 municipios donde la empresa presta su servicio en Antioquia.</p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div> <!-- /timeline-panel -->
-                            </li
-
                         </ul>
                     </div>
                 </div>
@@ -349,24 +380,24 @@
         <div class="row">
           <div class="col-md-6">
             <div class="skill-progress">
-              <div class="skill-title"><h3>Desarrollo web</h3></div> 
+              <div class="skill-title"><h3>HTML</h3></div> 
               <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ><span>80%</span>
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" ><span>90%</span>
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
 
             <div class="skill-progress">
-              <div class="skill-title"><h3>SQL</h3></div> 
+              <div class="skill-title"><h3>CSS</h3></div> 
               <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ><span>60%</span>
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ><span>80%</span>
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
             <div class="skill-progress">
-              <div class="skill-title"><h3>Business Intelligence</h3></div>  
+              <div class="skill-title"><h3>JavaScript</h3></div>  
               <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ><span>60%</span>
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><span>75%</span>
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
@@ -376,21 +407,21 @@
             <div class="skill-progress">
               <div class="skill-title"><h3>Python</h3></div> 
               <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ><span>60%</span>
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><span>75%</span>
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
             <div class="skill-progress">
               <div class="skill-title"><h3>C, C++</h3></div> 
               <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" ><span>70%</span>
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ><span>80%</span>
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
             <div class="skill-progress">
               <div class="skill-title"><h3>Assambler - HDL</h3></div>  
               <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ><span>60%</span>
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><span>75%</span>
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
@@ -411,7 +442,7 @@
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-2">
-              <div class="chart" data-percent="80" data-color="2ecc71">
+              <div class="chart" data-percent="75" data-color="2ecc71">
                     <span class="percent"></span>
                     <div class="chart-text">
                       <span>Creatividad</span>
@@ -438,7 +469,7 @@
               <div class="chart" data-percent="80" data-color="2ecc71">
                     <span class="percent"></span>
                     <div class="chart-text">
-                      <span> Aprendizaje</span>
+                      <span> Enseñanza</span>
                     </div>
                 </div>
             </div>
@@ -454,6 +485,61 @@
 
       </div><!-- /.container -->
     </section><!-- End Skills Section -->
+
+
+<!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Contactame</h2>
+
+        <div class="row">
+
+          <div class="col-md-6">
+            <div class="row center-xs">
+              
+              <div class="col-sm-6">
+                <i class="fa fa-map-marker"></i>
+                <address>
+                  <strong>Dirección</strong>
+                  Cll 63C Cr 55-73 Barrio La Aldea, Apto 101<br>
+                  Itagui, Antioquia<br>
+                </address>
+              </div>
+
+              <div class="col-sm-6">
+                <i class="fa fa-envelope"></i>
+                    <div class="contact-number">
+                      <strong>Correo Electronico</strong>
+                      alvaro_chacon08@hotmail.com
+                      alvaro.chacon@udea.edu.co
+                    </div>
+              </div>
+
+              <div class="col-sm-6">
+                <i class="fa fa-mobile"></i>
+                    <div class="contact-number">
+                      <strong>Numero telefonico</strong>
+                      (+57) 317 746 8060
+                    </div>
+              </div>
+
+            </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="location-map">
+                <div id="mapCanvas" class="map-canvas"></div>
+              </div>
+            </div> <!-- /col-md-6 -->
+          
+          </div> <!-- /.col-center-xs -->
+
+          </div> <!-- /col-md-6 -->
+          
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- End Contact Section -->
+
 
 	<!-- Footer Section -->
     <footer class="footer-wrapper">
@@ -486,7 +572,7 @@
   <script src="assets/js/jquery.easypiechart.js"></script>
   <script src="assets/js/jquery.shuffle.min.js"></script>
   <script src="assets/js/jquery.magnific-popup.min.js"></script>
-  <script src="https://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
   <script src="assets/js/jquery.fitvids.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
   <script src="assets/js/scripts.js"></script>
